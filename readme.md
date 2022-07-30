@@ -52,7 +52,7 @@ Edit the `CONFIG` section to your needs. See below.
 `cdn` is the CDN provider that you want to whitelist for your web server. Example: 
 
     cdn="cloudflare"
-    # "cloudflare" or "noc" 
+    # "cloudflare" or "noc" or "cloudflare_and_noc"
 
 `ip_auth_key` is the IP Auth key you obtained from NOC.org. Example: 
 

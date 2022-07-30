@@ -44,6 +44,10 @@ switch ($cdn_and_protocol) {
     case "cloudflare_ipv6":
         $ips = file_get_contents("data/cloudflare_ipv6.txt");
         break;
+    case "cloudflare_and_noc_ipv4":
+        $ips = file_get_contents("data/cloudflare_ipv4.txt");
+        $ips .= "\n" . file_get_contents("data/noc_ipv4.txt");
+        break;
     default:
         $ips = false;
         $rule .= "# Accept all IPs to web server\n-A INPUT -p tcp --dport 80 -j ACCEPT\n-A INPUT -p tcp --dport 443 -j ACCEPT\n";
