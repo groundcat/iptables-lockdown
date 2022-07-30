@@ -27,6 +27,8 @@ Set up a scheduled cron job to run the `cron.php` script every day. This script 
     # cron.php will run every day at midnight
     # 0 0 * * * php /path/to/api/cron.php
 
+For example, your API server URL will be `https://example.com/iptables-lockdown/api.php`.
+
 ### IP Auth
 
 #### Option 1. Use NOC.org IP Auth
@@ -35,7 +37,7 @@ Set up a scheduled cron job to run the `cron.php` script every day. This script 
 
 #### Option 2. Use IP Auth hosted on your own server
 
-A simple IP Auth implementation is included in the `ip_auth` folder. You can use this as a starting point for your own implementation.
+A simple IP Auth implementation is included in the `ip_auth` folder. You can use this as a starting point for your own implementation. Some codes in the `api.php` file under the commented line `// IP Auth` are based on the NOC.org IP Auth implementation, so you will need to change them if you want to use a self-hosted implementation.
 
 ### Your Server
 
